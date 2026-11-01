@@ -18,6 +18,7 @@ Crawls 10+ sources for what's trending in AI, ranks the trends, and turns each o
 - **Copywriting with guardrails:** an LLM writes the copy and code rejects hype, invented claims and clichés
 - **Generative visuals:** a creative-director LLM pass, then FLUX.2 Klein 9B on Cloudflare Workers AI
 - **Brand-safe output:** a code-driven template typesets the logo, text and CTA, so nothing is misspelled
+- **Model benchmark:** the same prompts run on FLUX.2 Klein 9B/4B, SD 3.5 Medium and SDXL, scored by Gemini vision; FLUX.2 Klein 9B wins with 7.6/10
 - **130 unit tests** and built to run on free tiers
 
 ---
