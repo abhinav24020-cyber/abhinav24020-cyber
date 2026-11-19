@@ -23,6 +23,22 @@ Crawls 10+ sources for what's trending in AI, ranks the trends, and turns each o
 
 ---
 
+### 🔬 Research: [APSA, how much do tiny prompt edits change LLM answers?](https://github.com/abhinav24020-cyber/APSA-Prompt-Sensitivity-Study)
+
+A controlled study of LLM robustness: typos, punctuation, capitalisation, word swaps and sentence reordering applied to 50 prompts across 5 task types, run on 5 live models (Qwen 3.8 27B, GPT-OSS 120B/20B, ALLaM 7B, Gemini 3.1 Flash-Lite), with every result compared against simply re-sending the unchanged prompt.
+
+<a href="https://github.com/abhinav24020-cyber/APSA-Prompt-Sensitivity-Study">
+  <img src="https://raw.githubusercontent.com/abhinav24020-cyber/APSA-Prompt-Sensitivity-Study/main/docs/paper/figures/fig1_treatment_vs_control_by_model.png" alt="Output change for perturbed vs unchanged prompts, by model" width="100%">
+</a>
+
+- **Small edits, big drift:** outputs changed in **66%** of perturbed runs vs **7%** for identical repeats (2,870 live generations, *p* ≈ 10⁻⁴⁰)
+- **Answers flip:** removing a single "?" turned *Einstein* into *Heisenberg*; correctness flipped in 4.3% of perturbed runs and in 0 of 500 controls
+- **Strong vs weak models:** frontier-class models kept their answers (≈1–3% flips) while a 7B model flipped 14% of the time
+- **Honest measurement:** a semantic audit showed meaning-altering edits cause 17.6% wrong answers vs 1.0% for meaning-preserving ones
+- **Rigorous stats:** paired controls, prompt-clustered bootstrap CIs, Wilcoxon / Friedman / mixed-effects models, Holm correction; **231 tests**, full research paper
+
+---
+
 ### 🛠️ Tools I work with
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -31,4 +47,8 @@ Crawls 10+ sources for what's trending in AI, ranks the trends, and turns each o
 ![Crawlee](https://img.shields.io/badge/Crawlee-0A1F3C)
 ![FLUX](https://img.shields.io/badge/FLUX.2-111111)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Sentence%20Transformers-FFD21E?logo=huggingface&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
